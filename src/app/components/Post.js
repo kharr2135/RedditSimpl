@@ -50,7 +50,7 @@ const [count, setCount] = useState(props.upVotes)
                 </div>) : null}
                 <div className='postMiniDetails'>
                     <div>
-                        <p>{props.author}</p>
+                        <p>u/{props.author}</p>
                     </div>
                     {props.nsfw ? (<div className='nsfw'>
                         NSFW
