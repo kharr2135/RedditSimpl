@@ -13,7 +13,9 @@ export default function LoadingPost(props) {
                     </button>
                 </div>
                 <div>
-                <p className='voteNumber'>{props.upVotes}</p>
+                <div className='loadingDiv3'>
+
+                    </div>
                 </div>
                 <div className='downVote'>
                     <button className='inheritButton'>

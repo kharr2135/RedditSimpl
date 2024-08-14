@@ -118,19 +118,19 @@ span {
 .returnHome {
     padding: 10px 15px;
     font-size: 40px;
-    background-color: rgb(40, 40, 238);
+    background-color: rgb(75, 123, 243);
     color: white;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.2s;
-    border: 1px solid rgb(40, 40, 238);
+    border: 1px solid rgb(75, 123, 243);
     border-radius: 6px;
 }
 
 .returnHome:hover {
     background-color: white;
-    color: rgb(40, 40, 238);
-    border: 1px solid rgb(40, 40, 238);
+    color: rgb(75, 123, 243);
+    border: 1px solid rgb(75, 123, 243);
 
 }
 
@@ -147,7 +147,7 @@ span {
 
 .postContainer {
     display: flex;
-    min-height: 200px;
+    min-height: 225px;
     max-height: auto;
     width: 95%;
     box-shadow: 4px 4px 5px 4px rgba(32, 32, 32, 0.05);
@@ -210,14 +210,30 @@ span {
     flex: 0.6;
     padding: 15px;
     font-size: 0.6rem;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
 
 }
 
 .postImg {
     height: auto;
+    min-width: 380px;
+    max-width: 500px;
+    flex: 1;
+    padding: 10px;
+}
+.postImgContainer {
+    height: auto;
+    min-width: 480px;
     max-width: 900px;
     flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+video {
+    padding: 10px 0px;
+    max-height: 400px;
 }
 .postMiniDetails {
     width: 90%;
@@ -227,11 +243,18 @@ span {
     border-top: 0.5px solid #323232;
     flex: 0.6;
     margin: 0 auto;
+    padding: 10px 0px;
 }
-.voteNumber {
+.voteNumber, .upVoteNumber, .downVoteNumber {
     font-weight: 600;
     color: #7c7a7a;
 
+}
+.upVoteNumber {
+    color: rgb(7, 217, 7);
+}
+.downVoteNumber {
+    color: red ;
 }
 .nonActiveSubReddit {
     color: #7c7a7a;
@@ -246,7 +269,16 @@ span {
     height: 50px;
 }
 .nonActiveSubReddit:hover {
-    background-color: rgb(222, 222, 222);
+    background-color: rgb(244, 244, 244);
+    position: relative;
+}
+.nonActiveSubReddit:hover::before {
+    content: '';
+    height: 100%;
+    background-color: gray;
+    width: 5px;
+    position: absolute;
+    left: 0;
 }
 
 .activeSubreddit {
@@ -288,12 +320,34 @@ span {
     height: 90%;
     background-color: rgb(229, 227, 227);
 }
-.loadingDiv2 {
+.loadingDiv2, .loadingDiv3 {
     height: 30px;
     width: 85px;
     background-color: rgb(229, 227, 227);
     border-radius: 3px;
 }
+.loadingDiv3 {
+    height: 19px;
+    width: 50px;
+}
+
+.span2 {
+    color: #FF4500;
+}
+
+.return {
+    padding: 10px 25px;
+    background-color: #FF4500;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 3px;
+}
+
+.return:active {
+    opacity: 0.75;
+}
+
 
 
 

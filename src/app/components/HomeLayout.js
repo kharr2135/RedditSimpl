@@ -4,13 +4,11 @@ import Header from './Header'
 export default function HomeLayout() {
 
 
-
+        //keeping the layout here just for ease even though i could get rid of it and just render the header as the / route
     return (
         <>
         <Header/>
-        <div className='mainContainer'>
-            <Outlet />
-        </div>
+        
         </>
     )
 }

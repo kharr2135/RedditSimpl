@@ -9,15 +9,15 @@ import Television from './app/components/subs/Television'
 import Pics from './app/components/subs/Pics'
 import Nostupidquestions from './app/components/subs/Nostupidquestions'
 import Gym from './app/components/subs/Gym'
-import Dogs from './app/components/subs/Dogs'
+import Memes from './app/components/subs/Memes'
 import Xqcow from './app/components/subs/Xqcow'
 import Joerogan from './app/components/subs/Joerogan'
 import ErrorElement from './app/components/ErrorElement'
 
 const router = createBrowserRouter(createRoutesFromElements(
-
+//i realize i can just map over the elements and just have made one "sub"/route
   <Route path="/" element={<HomeLayout/>}>
-    <Route index element={<Popular />} />
+    <Route index element={<Popular />} /> 
     <Route path="politics" element={<Politics />} />
     <Route path="livestreamfail" element={<Livestreamfail />} />
     <Route path="funny" element={<Funny />} />
@@ -25,7 +25,7 @@ const router = createBrowserRouter(createRoutesFromElements(
     <Route path="pics" element={<Pics />} />
     <Route path="nostupidquestions" element={<Nostupidquestions />} />
     <Route path="gym" element={<Gym />} />
-    <Route path="videos" element={<Dogs />} />
+    <Route path="memes" element={<Memes />} />
     <Route path="xqcow" element={<Xqcow />} />
     <Route path="joerogan" element={<Joerogan />} />
   
