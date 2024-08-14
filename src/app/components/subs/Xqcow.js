@@ -37,6 +37,7 @@ const [search, setSearch] = useOutletContext()
  // if (!filteredPosts.length === 0) {
   //  return <h1>No Posts found</h1>
   //}
+  
   const mappedPosts = filteredPosts.map(item => {
   return <Post 
             title={item.data.title}
@@ -53,10 +54,10 @@ const [search, setSearch] = useOutletContext()
   return (
 
     <>
-    
+    {document.title=`r/xqcow`}
     {filteredPosts.length > 0 ? mappedPosts : (
       <>
-      <h1>No posts Found</h1>
+      <h1>No Posts Found</h1>
       <NavLink className="return" to="/" onClick={() => setSearch('')}>Return</NavLink>
     </>
     )}

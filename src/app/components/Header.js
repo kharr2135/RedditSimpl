@@ -12,7 +12,6 @@ export default function Header() {
         e.preventDefault()
        
     }
-//filter Logic: 
   return (
     <>
     <nav>

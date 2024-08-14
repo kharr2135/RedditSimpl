@@ -18,7 +18,7 @@ const [search, setSearch] = useOutletContext()
 
   
   }, [])
-
+document.title="r/pics"
   if (!postData) {
     return (
       <>
@@ -56,7 +56,7 @@ const [search, setSearch] = useOutletContext()
     
     {filteredPosts.length > 0 ? mappedPosts : (
       <>
-      <h1>No posts Found</h1>
+      <h1>No Posts Found</h1>
       <NavLink className="return" to="/" onClick={() => setSearch('')}>Return</NavLink>
     </>
     )}
