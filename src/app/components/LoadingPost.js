@@ -1,6 +1,5 @@
 import React from 'react'
 import { BiUpvote, BiDownvote } from "react-icons/bi";
-import { GoCommentDiscussion } from "react-icons/go";
 
 
 export default function LoadingPost(props) {
