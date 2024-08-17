@@ -395,6 +395,7 @@ video {
 
         }
         .sideBar {
+            min-height: 300px;
             height: 50vh;
             width: 100vw;
             box-shadow: 2px 1px 5px 5px rgba(32, 32, 32, 0.05);
@@ -434,4 +435,76 @@ video {
             padding: 5px;
             font-size: 15px;
         }
-}
+        .postContainer {
+            max-width: 100vw;
+            overflow-y: scroll;
+            min-width: none;
+            min-height: none;
+            max-height: 600px;
+
+
+        }
+        
+        video {
+            width: 100px;
+            height: auto;
+
+        }
+        .postImg {
+            min-height: auto;
+            max-height: 200px;
+            padding: 0;
+   }
+        .mainContainer {
+            width: 100vw;
+            overflow-x: hidden;
+            min-width: none;
+        }
+        .mainDataContainer {
+            min-width: 300px;
+        }
+        .postImgContainer {
+            min-height: none;
+            max-height: auto;
+            
+            max-width: 100vw;
+            justify-content: start;
+            padding-left: 20px;
+            min-width: 20px;
+            overflow-y: scroll;
+            
+
+        }
+        .postMiniDetails {
+            z-index: 100;
+            background-color: white;
+            font-size: 12px;
+            min-width: none;
+            max-width: 100%;
+            height: 30px;
+            margin: 0px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .upVoteNumber {
+            font-weight: lighter;
+            font-size: small;
+        }
+        .votesContainer {
+            width: 50px;
+
+        }
+        .postTitle {
+            font-size: 8px;
+            overflow-y: scroll;
+            min-width: none;
+            padding: 0px;
+            max-width: 100%;
+            min-height: 20px;
+        }
+        .subreddits {
+            color: #434343;
+            margin-top: 10px;
+            height: 50px;
+        }
+    }
